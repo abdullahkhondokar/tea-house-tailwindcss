@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,21 +13,56 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
     <!-- fontawesome cdn -->
     <script src="https://kit.fontawesome.com/0f41e9eaad.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-    
+    <!-- main container -->
+    <main class="max-w-screen-xl mx-auto">
+        <!-- header start -->
+        <header class="flex justify-center pt-10 mb-20">
+            <!-- content -->
+            <div>
+                <h1 class="text-7xl font-bold mb-7">
+                    It's good <br> tea time at The <br> Tea House
+                </h1>
+                <p class="text-[#777777] w-3/4 mb-7">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="text-lg font-bold bg-gradient-to-r from-orange-500 to-red-500 px-5 py-4 rounded-lg text-white">Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+            </div>
+            <div class="relative">
+                <!-- image -->
+                <div>
+                    <img class="w-full" src="./images/banner.png" alt="">
+                </div>
+                <!-- card -->
+                <div class="absolute flex items-center gap-x-4 bg-white rounded-lg py-5 px-6 drop-shadow-xl left-25 top-95">
+                    <!-- icon -->
+                    <div>
+                        <i class="fa-solid fa-star text-yellow-400 text-5xl"></i>
+                    </div>
+                    <!-- text -->
+                    <div>
+                        <h4 class="text-3xl font-bold">5.00</h4>
+                        <p class="text-[#777777]">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+    </main>
+
 </body>
+
 </html>
